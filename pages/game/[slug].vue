@@ -18,7 +18,7 @@ if (leaderboardDetail?.error?.status == 404) {
 
 <template>
   <div>
-    <Loader v-if="leaderboardDetail.loading"></Loader>
-    <LeaderboardInfo v-else :leaderboard="leaderboardDetail?.data!" />
+    <Loader v-if="leaderboardDetail?.loading" />
+    <LeaderboardInfo :leaderboard="leaderboardDetail?.data" />
   </div>
 </template>
